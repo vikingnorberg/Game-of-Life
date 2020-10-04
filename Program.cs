@@ -33,8 +33,8 @@ namespace gameOfLifeV2
             Random rnd = new Random();
 
             int xDimension = 60;
-            int yDimension = 30;
-            int startAmount = (xDimension * yDimension) / 2;
+            int yDimension = 33;
+            int startAmount = (xDimension * yDimension) / 3;
 
             /* The first gen matrix */
             int[,] matrix = new int[yDimension, xDimension];
@@ -61,17 +61,11 @@ namespace gameOfLifeV2
 
             // Prints the sexy logo. 
             Console.Clear();
-            Console.WriteLine("  _____     _ _     _              _____     _                 _        ");
-            Console.WriteLine(" |     |___| | |_ _| |___ ___     |  _  |_ _| |_ ___ _____ ___| |_ ___  ");
-            Console.WriteLine(" |   --| -_| | | | | | .'|  _|    |     | | |  _| . |     | .'|  _| .'| ");
-            Console.WriteLine(" |_____|___|_|_|___|_|__,|_|      |__|__|___|_| |___|_|_|_|__,|_| |__,| ");
-            Console.WriteLine("                                                                        ");
-            Console.WriteLine("           _____                      ___    __    _ ___                ");
-            Console.WriteLine("          |   __|___ _____ ___    ___|  _|  |  |  |_|  _|___            ");
-            Console.WriteLine("          |  |  | .'|     | -_|  | . |  _|  |  |__| |  _| -_|           ");
-            Console.WriteLine("          |_____|__,|_|_|_|___|  |___|_|    |_____|_|_| |___|           ");
-            Console.WriteLine("                                                                        ");
-            Console.WriteLine("                                                                        ");
+            Console.WriteLine("  _____                              _____                      ___    __    _ ___      ");
+            Console.WriteLine(" |     |___ ___ _ _ _ ___ _ _ ___   |   __|___ _____ ___    ___|  _|  |  |  |_|  _|___  ");
+            Console.WriteLine(" |   --| . |   | | | | .'| | |_ -|  |  |  | .'|     | -_|  | . |  _|  |  |__| |  _| -_| ");
+            Console.WriteLine(" |_____|___|_|_|_____|__,|_  |___|  |_____|__,|_|_|_|___|  |___|_|    |_____|_|_| |___| ");
+            Console.WriteLine("                                                                                        ");
             Console.WriteLine(" Erik V. Norberg");
             Console.WriteLine(" GitHub: vikignnorberg");
             Console.WriteLine(" Tue, 29 Sep 2020");
@@ -150,8 +144,8 @@ namespace gameOfLifeV2
                     }
                 }
                 Console.CursorVisible = false;
-                Console.SetCursorPosition(0, 16);
-                Thread.Sleep(500);
+                Console.SetCursorPosition(0, 10);
+                Thread.Sleep(300);
             }
         }
     }
